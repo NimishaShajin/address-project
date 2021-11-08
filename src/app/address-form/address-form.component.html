@@ -1,0 +1,51 @@
+<h2 class="address-title">Address Form</h2>
+<div class="address-body">
+  <form [formGroup]="formInstance">
+    <div class="form-group">
+      <label class="form-group">Name</label>
+      <input type="text" name="nameForm" formControlName="nameForm" id="nameForm" />
+    </div>
+    <div class="form-group">
+      <label class="text-strong">Age</label>
+      <input type="text" name="ageForm" formControlName="ageForm" id="ageForm" />
+    </div>
+    <div class="form-group">
+      <label class="text-strong">Gender</label>
+      <input type="text" name="genderForm" formControlName="genderForm" id="genderForm" />
+    </div>
+
+    <div class="form-group">
+      <label class="text-strong">Address Line 1</label>
+      <input type="text" name="address1" formControlName="address1" id="address1" />
+    </div>
+    <div class="form-group">
+      <label class="text-strong">Address Line 2</label>
+      <input type="text" name="address2" formControlName="address2" id="address2" />
+    </div>
+    <div class="form-group">
+      <label class="text-strong">city</label>
+      <input type="text" name="city" formControlName="city" id="city" />
+    </div>
+    <div class="form-group">
+      <label class="text-strong">Pincode</label>
+      <input type="text" name="pincode" formControlName="pincode"  id="pincode" />
+    </div>
+    <div class="form-group">
+      <label class="text-strong">State</label>
+      <input type="text" name="state" formControlName="state" id="state" />
+    </div>
+    <div class="form-group">
+      <label class="text-strong">Country</label>
+      <input type="text" name="country" formControlName="country" id="country" />
+    </div>
+  </form>
+</div>
+<br /><br />
+<div class="form-submit">
+  <button
+    type="button"
+    class="submitButton"
+    (click)="save()"
+ 
+  >Submit</button>
+</div>
