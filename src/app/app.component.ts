@@ -9,17 +9,28 @@ export class AppComponent {
   value: any;
   title = 'address-project';
   test = 'test code';
-  
+  name?: string;
+  age: string = "";
+  gender : string = "";
+  addr1 : string = "";
+  addr2 : string = "";
+  city : string = "";
+  pincode : string = "";
+  state : string = "";
+  country : string = "";
+  showFinalResult : boolean= false;
 
   showChildComponent(e: any) {
     console.log(e);
-    this.value = `<p>Name - ${e.nameForm}</p>
-    <p>Age - ${e.ageForm}</p>
-    <p>Gender - ${e.genderForm}</p>
-    <p>Address - ${e.address1}, ${e.address2}, ${e.city}</p>
-    <p>Pincode - ${e.pincode}</p>
-    <p>State - ${e.state}</p>
-    <p>Country - ${e.country}</p>
-    `
+    this.showFinalResult = true;
+    this.name = e.nameForm;
+    this.age = e.ageForm;
+    this.gender = e.genderForm;
+    this.addr1 = e.address1;
+    this.addr2 = e.address2;
+    this.pincode = e.pincode;
+    this.city = e.city;
+    this.state = e.state;
+    this.country = e.country;
   }
 }
