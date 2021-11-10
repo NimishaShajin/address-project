@@ -1,12 +1,12 @@
 <h1>Hello</h1>
 <div *ngIf="showFinalResult" >
-    <p>Name - {{name}}</p>
-    <p>Age - {{ age}}</p>
-    <p>Gender - {{ gender }}</p>
-    <p>Address - {{ addr1 }}, {{ addr2}}, {{city}}</p>
-    <p>Pincode - {{ pincode }}</p>
-    <p>State - {{ state}}</p>
-    <p>Country - {{ country }}</p>
+    <p>Name - {{formData.nameForm}}</p>
+    <p>Age - {{ formData.ageForm}}</p>
+    <p>Gender - {{ formData.genderForm }}</p>
+    <p>Address - {{ formData.address1 }}, {{ formData.address2}}, {{formData.city}}</p>
+    <p>Pincode - {{ formData.pincode }}</p>
+    <p>State - {{ formData.state}}</p>
+    <p>Country - {{ formData.country }}</p>
    
 </div>
 <app-address-form (newItemEvent)="showChildComponent($event)"></app-address-form>
